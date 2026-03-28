@@ -9,54 +9,31 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff;
     }
 
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 15px 30px;
       border-bottom: 1px solid #eee;
     }
 
-    header h2 {
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
     nav a {
-      margin: 0 10px;
+      margin: 10px;
       text-decoration: none;
       color: black;
       font-weight: bold;
     }
 
     .hero {
-      position: relative;
-      height: 400px;
-      overflow: hidden;
-    }
-
-    .hero video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      background: black;
       color: white;
-      font-size: 50px;
-      background: rgba(0,0,0,0.5);
-      padding: 10px 20px;
+      text-align: center;
+      padding: 80px;
     }
 
     .productos {
-      padding: 40px;
+      padding: 30px;
       text-align: center;
     }
 
@@ -67,7 +44,7 @@
     }
 
     .card {
-      transition: transform 0.3s;
+      transition: 0.3s;
     }
 
     .card:hover {
@@ -85,31 +62,12 @@
     }
 
     .btn {
-      display: inline-block;
-      padding: 10px 15px;
       background: black;
       color: white;
+      padding: 10px;
       text-decoration: none;
       border-radius: 5px;
-    }
-
-    .social {
-      text-align: center;
-      margin: 30px 0;
-    }
-
-    .social a {
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
+      display: inline-block;
     }
 
     .whatsapp {
@@ -123,6 +81,14 @@
       text-decoration: none;
       font-size: 20px;
     }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 
@@ -133,53 +99,77 @@
   <nav>
     <a href="#">Inicio</a>
     <a href="#">Tienda</a>
-    <a href="#">Contacto</a>
   </nav>
 </header>
 
-<!-- VIDEO PRINCIPAL -->
-<section class="hero">
-  <video autoplay muted loop>
-    <source src="video/modelo.mp4" type="video/mp4">
-  </video>
+<div class="hero">
   <h1>NUEVA COLECCIÓN</h1>
-</section>
+</div>
 
-<!-- PRODUCTOS -->
 <section class="productos">
-  <h2>DESTACADOS</h2>
+  <h2>PRODUCTOS</h2>
 
   <div class="grid">
 
     <div class="card">
-      <img src="img/buzo1.jpg">
-      <h3>Buzo Negro</h3>
-      <p class="precio">$24.300</p>
+      <img src="img/estampado-animal.jpg">
+      <h3>Estampado Animal Conjunto</h3>
+      <p class="precio">$40.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="img/buzo2.jpg">
-      <h3>Buzo Beige</h3>
-      <p class="precio">$24.300</p>
+      <img src="img/palazos.jpg">
+      <h3>Palazos</h3>
+      <p class="precio">$20.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/body-camisa.jpg">
+      <h3>Body Camisa</h3>
+      <p class="precio">$30.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/buzo-argentina-1.jpg">
+      <h3>Buzo Argentina Unisex 1</h3>
+      <p class="precio">$25.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/buzo-argentina-2.jpg">
+      <h3>Buzo Argentina Unisex 2</h3>
+      <p class="precio">$25.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chaqueta.jpg">
+      <h3>Chaqueta</h3>
+      <p class="precio">$60.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="img/pantalon-jean.jpg">
+      <h3>Pantalón de Jean</h3>
+      <p class="precio">$45.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
   </div>
 </section>
 
-<!-- REDES -->
-<section class="social">
-  <a href="https://www.instagram.com/auraindumentariaog?igsh=MXh6NmY5bXltcDNxaQ==">Instagram</a>
-  <a href="https://www.facebook.com/profile.php?id=61577531774795">Facebook</a>
-</section>
-
 <footer>
   <p>© 2026 Aura Indumentaria</p>
 </footer>
 
-<!-- BOTON WHATSAPP -->
 <a href="https://wa.me/5492622466018" class="whatsapp">💬</a>
 
 </body>
 </html>
+
+
